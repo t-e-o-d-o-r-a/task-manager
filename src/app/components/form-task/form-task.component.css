@@ -1,0 +1,39 @@
+.fake-form, .tasks {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 3rem auto;
+  width: 70vw;
+  padding: 0;
+}
+.field {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+}
+.form-bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  width: 70%;
+}
+input, textarea, select, button {
+  border-radius: 20px;
+  border: 1px solid #4f3c50;
+}
+select, button {
+  padding: 0.5rem 1rem;
+}
+button {
+  background-color: #fecdff;
+}
+.task-message {
+  padding-top: 2rem;
+}
+.task-container {
+  width: 70%;
+}
+

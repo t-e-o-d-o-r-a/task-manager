@@ -1,0 +1,28 @@
+<div class="fake-form">
+  <div class="field">
+    <label>Task title:</label>
+    <input type="text" [(ngModel)]="title" />
+  </div>
+  <div class="field">
+    <label>Task description:</label>
+    <textarea [(ngModel)]="description"></textarea>
+  </div>
+  <div class="form-bottom">
+    <select [(ngModel)]="priority">
+      <option value="0">Low</option>
+      <option value="1">High</option>
+    </select>
+
+    <button (click)="submitForm()">Save task</button>
+  </div>
+
+  <div class="task-message">
+    <p>{{ message }}</p>
+  </div>
+</div>
+
+<div class="tasks" >
+  <app-task class="task-container" *ngFor="let task of tasks" [task]="task"></app-task>
+</div>
+
+
